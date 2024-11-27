@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  meatball-craft:
+    image: 3jackdaws/meatballcraft:latest
+    build: .
+    container_name: meatball_craft
+    volumes:
+      - "/mnt/data/meatballcraft:/mc"
+    ports:
+      - "25565:25565"
+    tty: true
+    restart: always
+    user: root
