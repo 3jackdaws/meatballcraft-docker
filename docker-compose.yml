@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   meatball-craft:
-    image: 3jackdaws/meatballcraft:latest
+    image: 3jackdaws/meatballcraft:0.16.5-hotfix3
     build: .
     container_name: meatball_craft
     volumes:
